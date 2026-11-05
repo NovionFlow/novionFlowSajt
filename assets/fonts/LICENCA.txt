@@ -1,0 +1,4 @@
+Fontovi u ovom folderu su objavljeni pod licencom SIL Open Font License 1.1:
+- Bricolage Grotesque — Copyright 2022 The Bricolage Grotesque Project Authors (https://github.com/ateliertriay/bricolage)
+- IBM Plex Mono — Copyright © 2017 IBM Corp. (https://github.com/IBM/plex)
+Tekst licence: https://openfontlicense.org/open-font-license-official-text/
