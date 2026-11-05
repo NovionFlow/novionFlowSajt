@@ -3,8 +3,9 @@
   NOVION FLOW — početna stranica.
   Pre objave zameniti sve što je označeno klasom "dopuniti" (podaci firme, kontakt, cene):
   pretraga po reči  dopuniti  u index.html i privatnost.html.
-  Download: kada installer bude objavljen kao GitHub Release, dugme "Preuzimanje" dobija pravi link
-  i uklanja se aria-disabled; SHA-256 se upisuje u odeljak "Instalacija".
+  Download: link .../releases/latest/download/NOVION-FLOW-setup.exe uvek vodi na najnoviji GitHub Release
+  (fajl u release-u mora da se zove tačno NOVION-FLOW-setup.exe). Uz novu verziju ažurirati broj verzije,
+  veličinu i SHA-256 u odeljku "Instalacija".
 -->
 <html lang="sr-Latn">
   <head>
@@ -62,8 +63,10 @@
             </p>
             <div class="akcije">
               <a class="dugme dugme-glavno" href="#kontakt">Zatražite probnu licencu</a>
-              <a class="dugme dugme-sporedno" href="#instalacija" aria-disabled="true" tabindex="-1"
-                >Preuzimanje — uskoro</a
+              <a
+                class="dugme dugme-sporedno"
+                href="https://github.com/NovionFlow/novionFlowSajt/releases/latest/download/NOVION-FLOW-setup.exe"
+                >Preuzmite za Windows</a
               >
             </div>
             <p class="napomena-uvod">Probna licenca: 120 sati, bez obaveze.</p>
@@ -283,7 +286,12 @@
           <div class="uvod-sekcije">
             <p class="oznaka">Instalacija</p>
             <h2>Preuzimanje i prvo pokretanje</h2>
-            <p>Instalacioni program uskoro će biti dostupan ovde. Do tada ga šaljemo uz probnu licencu.</p>
+            <p>Verzija 1.0.0 · 6,8 MB · Windows 10 i 11, 64-bitni. Za rad je potrebna licenca.</p>
+            <a
+              class="dugme dugme-glavno"
+              href="https://github.com/NovionFlow/novionFlowSajt/releases/latest/download/NOVION-FLOW-setup.exe"
+              >Preuzmite NOVION FLOW</a
+            >
           </div>
           <div class="instalacija">
             <ol>
@@ -308,7 +316,8 @@
               </p>
               <div class="otisak">
                 SHA-256 otisak instalacionog programa:<br />
-                <code><span class="dopuniti">biće objavljen uz prvu verziju</span></code>
+                <code>A477B8DE16C87CC09576D7B29F9BBFF6F57ED533B5549E4D6B3EB21D8AFE1523</code><br />
+                Provera u PowerShell-u: <code>Get-FileHash .\NOVION-FLOW-setup.exe</code>
               </div>
             </div>
           </div>
