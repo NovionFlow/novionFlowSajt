@@ -7,5 +7,5 @@ bez spoljnih resursa (fontovi su lokalni); jedini spoljni servis je Web3Forms za
 - Pre objave: zameniti sve elemente sa klasom `dopuniti` (podaci firme, kontakt, cene).
 - Forma (`#kontakt` u `index.html`): `access_key` sa web3forms.com (javni ključ, vezan za novionflow@gmail.com); posle slanja
   Web3Forms preusmerava na `https://novionflow.rs/hvala.html`.
-- Download: installer se objavljuje kao GitHub Release; dugme „Preuzimanje” i SHA-256 u `index.html` se tada ažuriraju.
+- Download: installer se objavljuje kao GitHub Release; broj verzije i veličina u `index.html` se tada ažuriraju.
 - `licenca.novionflow.rs` je licencni server i nema veze sa ovim repozitorijumom.

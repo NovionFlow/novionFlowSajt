@@ -1,20 +1,19 @@
 <!doctype html>
 <!--
   NOVION FLOW — početna stranica.
-  Pre objave zameniti sve što je označeno klasom "dopuniti" (cene):
-  pretraga po reči  dopuniti  u index.html i privatnost.html.
+  Pre objave zameniti sve što je označeno klasom "dopuniti": pretraga po reči  dopuniti  u privatnost.html.
   Download: link .../releases/latest/download/NOVION-FLOW-setup.exe uvek vodi na najnoviji GitHub Release
   (fajl u release-u mora da se zove tačno NOVION-FLOW-setup.exe). Uz novu verziju ažurirati broj verzije i
-  veličinu (pretraga po  1.0.1 ) i SHA-256 u odeljku "Instalacija".
+  veličinu (pretraga po  1.0.1 ).
 -->
 <html lang="sr-Latn">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>NOVION FLOW — obrada i potpisivanje izvršiteljskih akata</title>
+    <title>NOVION FLOW — obrada i potpisivanje akata</title>
     <meta
       name="description"
-      content="NOVION FLOW je Windows aplikacija za javne izvršitelje: razdvaja PDF seriju na akte, imenuje ih po poslovnom broju i potpisuje kvalifikovanim elektronskim potpisom sa kartice."
+      content="NOVION FLOW je Windows aplikacija koja razdvaja PDF seriju na akte, imenuje ih po poslovnom broju i potpisuje kvalifikovanim elektronskim potpisom sa kartice."
     />
     <meta name="theme-color" content="#2E2420" />
     <link rel="icon" type="image/svg+xml" href="assets/simbol.svg" />
@@ -23,7 +22,7 @@
     <link rel="preload" href="assets/fonts/bricolage-latin.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="stylesheet" href="assets/stil.css" />
     <meta property="og:title" content="NOVION FLOW" />
-    <meta property="og:description" content="Serije izvršiteljskih akata — razdvojene, imenovane i potpisane." />
+    <meta property="og:description" content="Serije akata — razdvojene, imenovane i potpisane." />
     <meta property="og:image" content="https://novionflow.rs/assets/ikonica-256.png" />
     <meta property="og:url" content="https://novionflow.rs/" />
     <meta property="og:locale" content="sr_RS" />
@@ -40,9 +39,7 @@
         <nav aria-label="Glavni meni">
           <ul class="meni">
             <li><a href="#kako-radi">Kako radi</a></li>
-            <li><a href="#licence">Licence</a></li>
             <li><a href="#instalacija">Instalacija</a></li>
-            <li><a href="#pitanja">Pitanja</a></li>
             <li><a href="#kontakt">Kontakt</a></li>
           </ul>
         </nav>
@@ -56,7 +53,7 @@
           <div>
             <h1>Serija akata. <em>Razdvojena, imenovana i potpisana.</em></h1>
             <p class="podnaslov">
-              NOVION FLOW učitava PDF seriju izvršiteljskih akata, prepoznaje početak svakog akta, uklanja prazne
+              NOVION FLOW učitava PDF seriju akata, prepoznaje početak svakog akta, uklanja prazne
               strane, imenuje fajlove po poslovnom broju i potpisuje ih kvalifikovanim elektronskim potpisom sa vaše
               kartice.
             </p>
@@ -67,34 +64,24 @@
                 ><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3v10m0 0-4-4m4 4 4-4M4 16h12" /></svg
                 >Preuzmite za Windows</a
               >
-              <a class="dugme dugme-sporedno" href="#kontakt">Zatražite probnu licencu</a>
             </div>
             <p class="napomena-uvod">
-              Verzija 1.0.1 · 63 MB · Windows 10 i 11 (64-bitni). Probna licenca traje 120 sati i besplatna je.
+              Verzija 1.0.1 · 63 MB · Windows 10 i 11 (64-bitni). Probna licenca traje 48 sati i besplatna je.
             </p>
           </div>
 
-          <figure class="tok" aria-label="Primer: jedna PDF serija postaje tri potpisana akta">
-            <div class="tok-red">
-              <div class="serija" aria-hidden="true"><span></span><span></span><span></span></div>
-              <p class="serija-natpis">
-                <strong>serija-03-11.pdf</strong>
-                38 strana · 3 akta · 2 prazne strane
-              </p>
-            </div>
-            <div class="strelica" aria-hidden="true"></div>
-            <ul class="akti">
-              <li>
-                <span class="naziv"><span>ИИВК 112-2026.pdf</span></span><span class="potpisano">potpisano</span>
-              </li>
-              <li>
-                <span class="naziv"><span>И.Ив 3487-2025.pdf</span></span><span class="potpisano">potpisano</span>
-              </li>
-              <li>
-                <span class="naziv"><span>ИИ 905-2026.pdf</span></span><span class="potpisano">potpisano</span>
-              </li>
-            </ul>
-            <figcaption class="tok-podnozje">Poslovni broj ostaje u izvornom pismu: „/” postaje „-”.</figcaption>
+          <figure class="ikonica-uvod">
+            <svg class="ikonica-anim" viewBox="0 0 64 64" width="320" height="320" role="img" aria-label="Ikonica aplikacije NOVION FLOW">
+              <rect width="64" height="64" rx="14" fill="#2E2420" />
+              <g transform="translate(10.7 11) scale(0.664)">
+                <rect class="list list-1" x="8" y="6" width="30" height="38" rx="3" fill="#F5F1EC" fill-opacity="0.3" />
+                <rect class="list list-2" x="16" y="12" width="30" height="38" rx="3" fill="#F5F1EC" fill-opacity="0.6" />
+                <g class="list list-3">
+                  <rect x="24" y="18" width="30" height="40" rx="3" fill="#F5F1EC" />
+                  <circle class="pecat" cx="45" cy="48" r="5" fill="#3BB3C4" />
+                </g>
+              </g>
+            </svg>
           </figure>
         </div>
       </section>
@@ -115,24 +102,21 @@
               <span class="broj">2</span>
               <h3>Prepoznavanje akata</h3>
               <p>
-                Početak akta se utvrđuje tek kad se poklope grb, zaglavlje i poslovni broj. Prazne strane se
-                uklanjaju.
+                Program automatski prepoznaje svaki akt u seriji i uklanja prazne strane.
               </p>
             </li>
             <li>
               <span class="broj">3</span>
               <h3>Podela i nazivi</h3>
               <p>
-                Svaki akt postaje poseban fajl nazvan po poslovnom broju:
-                <span class="primer">ИИВК 1/2025</span> → <span class="primer">ИИВК 1-2025.pdf</span>
+                Svaki akt postaje poseban fajl nazvan po poslovnom broju.
               </p>
             </li>
             <li>
               <span class="broj">4</span>
               <h3>Potpis karticom</h3>
               <p>
-                Vidljiv potpis „Digitally signed by IME PREZIME” sa datumom, gore na prvoj ili dole na poslednjoj
-                strani.
+                Svaki akt je potpisan digitalnim potpisom.
               </p>
             </li>
           </ol>
@@ -148,7 +132,7 @@
           <div class="uvod-sekcije">
             <h2>Kad nije sigurno, program staje i ne nagađa</h2>
             <p>
-              Izvršiteljski akti ne trpe greške u nazivu ili potpisu. Zato NOVION FLOW radije prekine seriju nego da
+              Akti ne trpe greške u nazivu ili potpisu. Zato NOVION FLOW radije prekine seriju nego da
               sačuva nešto pogrešno.
             </p>
           </div>
@@ -167,45 +151,6 @@
             <div class="nacelo">
               <h3>Ključ ostaje na kartici</h3>
               <p>PIN se ne čuva, a privatni ključ ne napušta karticu. Potpis se nikad ne stavlja preko teksta.</p>
-            </div>
-            <div class="nacelo">
-              <h3>Samo vaši akti</h3>
-              <p>
-                Potpisuju se samo akti koji pripadaju vlasniku licence. Dokumenti i poslovni brojevi se ne šalju na
-                server.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="sekcija" id="licence">
-        <div class="omotac">
-          <div class="uvod-sekcije">
-            <h2>Licenca je vezana za izvršitelja i njegovu karticu</h2>
-            <p>
-              Aktivira se jednokratnim kodom koji dobijate od nas. Obnova ne traži ponovnu instalaciju; plaćanje ide po
-              predračunu, van aplikacije.
-            </p>
-          </div>
-          <div class="licence">
-            <div class="licenca">
-              <h3>Probna</h3>
-              <p class="trajanje">120 sati</p>
-              <p>Puna funkcionalnost, na vašim serijama.</p>
-              <p class="cena">Bez naknade</p>
-            </div>
-            <div class="licenca">
-              <h3>Mesečna</h3>
-              <p class="trajanje">1 mesec</p>
-              <p>Jedan kalendarski mesec od aktivacije ili obnove.</p>
-              <p class="cena"><span class="dopuniti">Cena na upit</span></p>
-            </div>
-            <div class="licenca">
-              <h3>Godišnja</h3>
-              <p class="trajanje">12 meseci</p>
-              <p>Za kancelarije koje NOVION FLOW koriste svakodnevno.</p>
-              <p class="cena"><span class="dopuniti">Cena na upit</span></p>
             </div>
           </div>
         </div>
@@ -235,10 +180,6 @@
               <li>
                 <strong>Windows 10 ili 11, 64-bitni</strong>, i administratorska prava za instalaciju. .NET se
                 instalira sam ako nedostaje.
-              </li>
-              <li>
-                <strong>Kartica sa kvalifikovanim sertifikatom za potpis</strong> u čitaču, sa instaliranim softverom
-                izdavaoca. Podržan MUP Srbije (lična karta); Pošta i Halcom su u završnom testiranju.
               </li>
               <li><strong>Aktivacioni kod</strong> — šaljemo ga uz licencu, i za probnu.</li>
               <li><strong>Internet veza</strong> za aktivaciju i proveru licence.</li>
@@ -285,135 +226,19 @@
               </div>
             </li>
           </ol>
-
-          <details class="otisak">
-            <summary>Provera instalacionog programa (SHA-256)</summary>
-            <p>
-              Otisak: <code>31247FAB0497CDAB29A021203CEA04E5E7EDB4B74F08A8CB364D9200606F89DB</code><br />
-              U PowerShell-u: <code>Get-FileHash .\NOVION-FLOW-setup.exe</code> — vrednost mora biti ista.
-            </p>
-          </details>
         </div>
       </section>
 
-      <section class="sekcija" id="pitanja">
-        <div class="omotac dve-kolone">
-          <h2>Česta pitanja</h2>
-          <div class="pitanja">
-            <details>
-              <summary>Nema dugmeta „Run anyway”.</summary>
-              <p>
-                Prvo kliknite <strong>More info</strong> — dugme se pojavljuje tek tada. Ako ga ni onda nema, računar
-                ima pravilo koje blokira nepotpisane programe; javite nam se ili zamolite osobu koja održava računare
-                da pokrene instalaciju.
-              </p>
-            </details>
-            <details>
-              <summary>Nemam administratorska prava.</summary>
-              <p>
-                Instalaciju jednom pokreće neko sa administratorskim nalogom. Posle toga aplikaciju pokrećete i
-                aktivirate sa svog, običnog naloga.
-              </p>
-            </details>
-            <details>
-              <summary>Aplikacija ne vidi moju karticu.</summary>
-              <p>
-                Proverite da je kartica u čitaču i da je instaliran softver izdavaoca kartice, tako da se sertifikat
-                vidi u Windows-u. Koristi se sertifikat za potpis; sertifikat za prijavu sa lične karte nije dovoljan.
-              </p>
-            </details>
-            <details>
-              <summary>Kako da instaliram novu verziju?</summary>
-              <p>
-                Preuzmite instalacioni program sa ove stranice i pokrenite ga preko postojeće instalacije. Aktivacija
-                i podešavanja ostaju; aplikacija se ne ažurira sama, pa vas obaveštavamo o novim verzijama.
-              </p>
-            </details>
-            <details>
-              <summary>Šta ako deinstaliram aplikaciju?</summary>
-              <p>
-                Uklanja se samo program. Aktivacija ostaje na računaru, pa ponovna instalacija ne traži novi kod.
-              </p>
-            </details>
-            <details>
-              <summary>Da li se moji dokumenti šalju negde?</summary>
-              <p>
-                Ne. Obrada i potpis se rade na vašem računaru. Server dobija samo proveru licence i zbirni broj
-                obrađenih akata, bez naziva fajlova, poslovnih brojeva i sadržaja.
-                <a href="privatnost.html">Politika privatnosti</a>
-              </p>
-            </details>
-          </div>
-        </div>
-      </section>
-
-      <section class="sekcija sekcija-svetla" id="kontakt">
+      <section class="sekcija" id="kontakt">
         <div class="omotac kontakt">
-          <div>
-            <h2>Zatražite licencu</h2>
-            <p>
-              Popunite formu i poslaćemo vam aktivacioni kod. Probna licenca traje 120 sati i besplatna je. Ako želite, instalaciju i prvu aktivaciju uradimo zajedno, na daljinu.
-            </p>
-            <p class="kontakt-podaci">
-              Radije pišete sami? <a href="mailto:novionflow@gmail.com">novionflow@gmail.com</a>
-            </p>
-          </div>
-
-          <!-- Web3Forms: access_key iz web3forms.com, vezan za novionflow@gmail.com. -->
-          <form class="forma" action="https://api.web3forms.com/submit" method="POST" accept-charset="UTF-8">
-            <input type="hidden" name="access_key" value="0fe5dfb2-a47b-4a94-816b-f6a04c62e371" />
-            <input type="hidden" name="subject" value="NOVION FLOW — zahtev za licencu" />
-            <input type="hidden" name="from_name" value="novionflow.rs" />
-            <input type="hidden" name="redirect" value="https://novionflow.rs/hvala.html" />
-            <input type="checkbox" name="botcheck" class="zamka" tabindex="-1" autocomplete="off" aria-hidden="true" />
-
-            <div class="polje">
-              <label for="f-ime">Ime i prezime izvršitelja</label>
-              <input id="f-ime" name="Ime i prezime" autocomplete="name" required maxlength="120" />
-            </div>
-            <div class="polja-red">
-              <div class="polje">
-                <label for="f-email">E-pošta</label>
-                <input id="f-email" name="email" type="email" autocomplete="email" required maxlength="160" />
-              </div>
-              <div class="polje">
-                <label for="f-tel">Telefon <span class="opciono">(opciono)</span></label>
-                <input id="f-tel" name="Telefon" type="tel" autocomplete="tel" maxlength="40" />
-              </div>
-            </div>
-            <div class="polja-red">
-              <div class="polje">
-                <label for="f-licenca">Licenca</label>
-                <select id="f-licenca" name="Licenca">
-                  <option>Probna (120 sati)</option>
-                  <option>Mesečna</option>
-                  <option>Godišnja</option>
-                </select>
-              </div>
-              <div class="polje">
-                <label for="f-kartica">Kartica za potpis</label>
-                <select id="f-kartica" name="Kartica">
-                  <option>MUP Srbije (lična karta)</option>
-                  <option>Pošta</option>
-                  <option>Halcom</option>
-                  <option>Ne znam</option>
-                </select>
-              </div>
-            </div>
-            <div class="polje">
-              <label for="f-poruka">Poruka <span class="opciono">(opciono)</span></label>
-              <textarea id="f-poruka" name="Poruka" rows="3" maxlength="2000"></textarea>
-            </div>
-            <label class="izbor">
-              <input type="checkbox" name="Pomoć oko instalacije" value="Da" />
-              Želim pomoć oko instalacije i prve aktivacije na daljinu
-            </label>
-            <button class="dugme dugme-glavno" type="submit">Pošaljite zahtev</button>
-            <p class="forma-napomena">
-              Podatke koristimo samo da bismo vam odgovorili i izdali licencu.
-              <a href="privatnost.html#kontakt-forma">Politika privatnosti</a>
-            </p>
-          </form>
+          <h2>Zatražite licencu</h2>
+          <p>
+            Pišite nam i poslaćemo vam aktivacioni kod. Probna licenca traje 48 sati i besplatna je. Ako želite,
+            instalaciju i prvu aktivaciju uradimo zajedno, na daljinu.
+          </p>
+          <a class="kontakt-mejl" href="mailto:novionflow@gmail.com?subject=NOVION%20FLOW%20%E2%80%94%20zahtev%20za%20licencu"
+            >novionflow@gmail.com</a
+          >
         </div>
       </section>
     </main>
@@ -425,14 +250,13 @@
             <img src="assets/simbol-krem.svg" alt="" width="30" height="30" />
             NOVION<span class="jezicak">FLOW</span>
           </a>
-          <p>Obrada i potpisivanje izvršiteljskih akata.</p>
+          <p>Obrada i potpisivanje akata.</p>
         </div>
         <div>
           <h2>Stranice</h2>
           <ul>
             <li><a href="#kako-radi">Kako radi</a></li>
             <li><a href="#instalacija">Instalacija</a></li>
-            <li><a href="#pitanja">Česta pitanja</a></li>
             <li><a href="privatnost.html">Politika privatnosti</a></li>
           </ul>
         </div>
