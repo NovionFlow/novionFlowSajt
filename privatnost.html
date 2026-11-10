@@ -1,5 +1,5 @@
 <!doctype html>
-<!-- Pre objave zameniti sve što je označeno klasom "dopuniti" (rukovalac podacima, kontakt). -->
+<!-- Rukovalac podacima: fizičko lice (2026-11-10). Kad se osnuje firma, zameniti red u odeljku „Rukovalac podacima”. -->
 <html lang="sr-Latn">
   <head>
     <meta charset="utf-8" />
@@ -28,13 +28,14 @@
         <h1>Politika privatnosti</h1>
         <p>
           Ovde je opisano koje podatke obrađuju aplikacija NOVION FLOW i njen licencni server, zašto i koliko dugo.
-          Ukratko: <strong>dokumenti koje obrađujete ostaju na vašem računaru</strong>. Server zna samo ono što je
+          Ukratko: <strong>dokumenti koje obrađujete ostaju na vašem računaru</strong>, osim akata koje sami pošaljete
+          bankama sa svog mejl naloga. Server zna samo ono što je
           potrebno za licencu.
         </p>
 
         <h2>Rukovalac podacima</h2>
         <p>
-          <span class="dopuniti">Naziv firme d.o.o., Ulica i broj, Grad, PIB —, MB —</span><br />
+          <strong>Marko Mijatović</strong>, fizičko lice — autor aplikacije NOVION FLOW<br />
           Kontakt za pitanja o privatnosti: <a href="mailto:novionflow@gmail.com">novionflow@gmail.com</a>
         </p>
 
@@ -89,6 +90,44 @@
           koristimo za reklamiranje.
         </p>
 
+        <h2 id="gmail">Slanje akata bankama i pristup Gmail nalogu</h2>
+        <p>
+          Posle potpisivanja, NOVION FLOW može da pošalje potpisane akte bankama sa mejl naloga koji vi povežete. Kada
+          povežete Gmail nalog prijavom preko Google-a, aplikacija od Google-a traži samo ove dozvole:
+        </p>
+        <ul>
+          <li>
+            <strong>vaša mejl adresa</strong> (<code>openid</code>, <code>userinfo.email</code>) — da bi se prikazalo sa
+            kog naloga se šalje i da se proveri da je povezan isti nalog;
+          </li>
+          <li>
+            <strong>slanje mejla u vaše ime</strong> (<code>gmail.send</code>) — da bi se poslali mejlovi bankama koje ste
+            pregledali i potvrdili.
+          </li>
+        </ul>
+        <p>
+          Aplikacija <strong>ne čita, ne pretražuje, ne briše i ne menja</strong> vašu poštu i nema pristup
+          kontaktima. Šalje isključivo mejlove koje ste u aplikaciji pregledali i izričito potvrdili: jedan mejl po
+          aktu i banci, sa potpisanim PDF-om u prilogu. Poslate poruke vidite u folderu „Poslato” svog naloga.
+        </p>
+        <p>
+          Pristupni token za Google nalog čuva se <strong>samo na vašem računaru</strong>, šifrovan za vaš Windows
+          nalog (Windows DPAPI). Ni token, ni sadržaj mejlova, ni adrese primalaca, ni prilozi nikada se ne šalju na
+          server NOVION FLOW niti bilo kome drugom osim primaocima koje ste potvrdili. Na računaru se vodi evidencija
+          slanja (bez adresa, naslova i sadržaja) samo da bi se sprečilo dvostruko slanje istog akta.
+        </p>
+        <p>
+          Pristup možete opozvati u svakom trenutku: u aplikaciji izborom „Odjavi nalog” ili na
+          <a href="https://myaccount.google.com/permissions">stranici dozvola vašeg Google naloga</a>.
+        </p>
+        <p>
+          Korišćenje i prenos podataka primljenih od Google API-ja u bilo koju drugu aplikaciju pridržava se
+          <a href="https://developers.google.com/terms/api-services-user-data-policy"
+            >Google API Services User Data Policy</a
+          >, uključujući zahteve „Limited Use”. Podatke iz Google naloga ne koristimo za reklame, ne prodajemo ih,
+          ne prenosimo trećim licima i ne koristimo ih za obučavanje modela veštačke inteligencije.
+        </p>
+
         <h2>Ovaj sajt</h2>
         <p>
           Sajt ne koristi kolačiće, analitiku ni spoljne fontove; jedini spoljni servis je forma za zahtev licence. Hostuje ga GitHub Pages, koji radi bezbednosti
@@ -112,7 +151,7 @@
           možete podneti Povereniku za informacije od javnog značaja i zaštitu podataka o ličnosti.
         </p>
 
-        <p class="oznaka" style="margin-top: 3em">Poslednja izmena: 5. novembar 2026.</p>
+        <p class="oznaka" style="margin-top: 3em">Poslednja izmena: 10. novembar 2026.</p>
       </div>
     </main>
 
