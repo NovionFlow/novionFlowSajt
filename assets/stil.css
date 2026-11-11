@@ -227,15 +227,16 @@ p {
   width: 30px;
   height: 30px;
 }
-.logo .jezicak {
-  font-family: var(--sans);
-  font-weight: 600;
-  font-size: 0.55rem;
-  letter-spacing: 0.2em;
-  border: 1.5px solid currentColor;
-  border-radius: 4px;
-  padding: 2px 6px 1px;
-  margin-left: 2px;
+/* Natpis „NOVION [FLOW]” (docs/NOVION-FLOW-logo/Najnoviji logo): slika kao maska, boja iz currentColor
+   (espreso u zaglavlju, krem u podnožju). Ime linka daje aria-label. */
+.logo .natpis {
+  display: inline-block;
+  flex: none;
+  width: 175px; /* 19 px visine × odnos slike 1952:212 */
+  height: 19px;
+  background-color: currentColor;
+  -webkit-mask: url("natpis.png") no-repeat center / contain;
+  mask: url("natpis.png") no-repeat center / contain;
 }
 
 .meni {
